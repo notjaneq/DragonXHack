@@ -11,6 +11,7 @@ import proclient.module.ModuleManager;
 import proclient.settings.SettingsManager;
 import proclient.module.Module;
 import proclient.ui.ArrayList;
+import proclient.ui.DragScreen;
 //import proclient.ui.TabGui;
 import net.lax1dude.eaglercraft.v1_8.Display;
 
@@ -22,6 +23,7 @@ public class Dragon {
     public static CommandManager cmdManager;
     public static ClickGui clickgui;
     public static SettingsManager setmgr;
+    public static DragScreen drag;
 
     
 
@@ -35,6 +37,8 @@ public class Dragon {
     }
 
     public final static ClickGui getClickgui() { return clickgui; }
+    public final static DragScreen getDragscreen()  { return drag; }
+
 
 
 }

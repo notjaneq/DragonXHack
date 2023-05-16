@@ -72,6 +72,8 @@ public class ModuleManager {
         newMod(new Fps());
         newMod(new TargetHud());
         newMod(new NoWeather());
+        newMod(new VapeOverlay());
+        newMod(new Drag());
 
         //MISC
         newMod(new SpeedMine());

@@ -1,11 +1,13 @@
 package net.minecraft.client.renderer.entity.layers;
 
 import net.lax1dude.eaglercraft.v1_8.opengl.GlStateManager;
+import net.minecraft.client.Minecraft;
 import net.minecraft.client.entity.AbstractClientPlayer;
 import net.minecraft.client.model.ModelPlayer;
 import net.minecraft.client.renderer.entity.RenderPlayer;
 import net.minecraft.entity.player.EnumPlayerModelParts;
 import net.minecraft.util.MathHelper;
+import net.minecraft.util.ResourceLocation;
 
 /**+
  * This portion of EaglercraftX contains deobfuscated Minecraft 1.8 source code.
@@ -36,10 +38,10 @@ public class LayerCape implements LayerRenderer<AbstractClientPlayer> {
 			float var6, float var7, float var8) {
 		if (abstractclientplayer.hasPlayerInfo() && !abstractclientplayer.isInvisible()
 				&& abstractclientplayer.isWearing(EnumPlayerModelParts.CAPE)
-				&& abstractclientplayer.getLocationCape() != null
 				&& this.playerRenderer.getMainModel() instanceof ModelPlayer) {
+					//if(abstractclientplayer.getName().equals(Minecraft.getMinecraft().getSession())) {
 			GlStateManager.color(1.0F, 1.0F, 1.0F, 1.0F);
-			this.playerRenderer.bindTexture(abstractclientplayer.getLocationCape());
+			this.playerRenderer.bindTexture(new ResourceLocation("dragon/cape.png"));
 			GlStateManager.pushMatrix();
 			GlStateManager.translate(0.0F, 0.0F, 0.125F);
 			double d0 = abstractclientplayer.prevChasingPosX
@@ -84,6 +86,7 @@ public class LayerCape implements LayerRenderer<AbstractClientPlayer> {
 			GlStateManager.popMatrix();
 		}
 	}
+//}
 
 	public boolean shouldCombineTextures() {
 		return false;

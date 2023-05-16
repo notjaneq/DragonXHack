@@ -27,7 +27,7 @@ public class DragScreen extends GuiScreen {
     @Override
     protected void actionPerformed(GuiButton parGuiButton) {
         if(parGuiButton.id == 1) {
-            mc.displayGuiScreen(null);
+            mc.displayGuiScreen(Dragon.getClickgui());
         }
         super.actionPerformed(parGuiButton);
     }

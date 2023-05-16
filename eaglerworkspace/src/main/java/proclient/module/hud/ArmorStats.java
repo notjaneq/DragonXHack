@@ -40,7 +40,7 @@ public class ArmorStats extends RenderModule {
                 }
             }
         RenderHelper.enableGUIStandardItemLighting();
-        Minecraft.getMinecraft().getRenderItem().renderItemAndEffectIntoGUI(is, this.x, this.y + this.getHeight() * i * 2);
+        Minecraft.getMinecraft().getRenderItem().renderItemAndEffectIntoGUI(is, this.x, this.y * i * 2);
         GlStateManager.popMatrix();
         }
     }

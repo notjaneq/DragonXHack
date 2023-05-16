@@ -3,8 +3,9 @@ package proclient.clickgui;
 import java.io.IOException;
 import java.util.ArrayList;
 
+import net.minecraft.client.gui.GuiButton;
 import net.minecraft.client.gui.GuiScreen;
-
+import proclient.Dragon;
 //Your Imports
 import proclient.clickgui.component.Component;
 import proclient.clickgui.component.Frame;
@@ -28,6 +29,14 @@ public class ClickGui extends GuiScreen {
 	
 	@Override
 	public void initGui() {
+		this.buttonList.add(new GuiButton(1, this.width / 2 - 100, this.height / 2 + 30, "dragscreen"));
+		super.initGui();
+	}
+	@Override
+	protected void actionPerformed(GuiButton button) {
+        if(button.id == 0) {
+            mc.displayGuiScreen(Dragon.getDragscreen());
+        }
 	}
 	
 	@Override
