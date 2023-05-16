@@ -200,7 +200,7 @@ public class Minecraft implements IThreadListener {
 	public int displayWidth;
 	public int displayHeight;
 	private boolean field_181541_X = false;
-	private Timer timer = new Timer(20.0F);
+	public Timer timer = new Timer(20.0F);
 	public WorldClient theWorld;
 	public RenderGlobal renderGlobal;
 	private RenderManager renderManager;
@@ -228,7 +228,7 @@ public class Minecraft implements IThreadListener {
 	public MouseHelper mouseHelper;
 	private final String launchedVersion;
 	private static int debugFPS;
-	private int rightClickDelayTimer;
+	public int rightClickDelayTimer;
 	private String serverName;
 	private int serverPort;
 	public boolean inGameHasFocus;
@@ -1103,7 +1103,7 @@ public class Minecraft implements IThreadListener {
 		}
 	}
 
-	private void clickMouse() {
+	public void clickMouse() {
 		if (this.leftClickCounter <= 0) {
 			this.thePlayer.swingItem();
 			if (this.objectMouseOver == null) {

@@ -37,7 +37,7 @@ public class Tessellator {
 	/**+
 	 * The static instance of the Tessellator.
 	 */
-	private static final Tessellator instance = new Tessellator(2097152);
+	public static final Tessellator instance = new Tessellator(2097152);
 
 	public static Tessellator getInstance() {
 		return instance;

@@ -19,12 +19,12 @@ package net.minecraft.util;
  * 
  */
 public class AxisAlignedBB {
-	public final double minX;
-	public final double minY;
-	public final double minZ;
-	public final double maxX;
-	public final double maxY;
-	public final double maxZ;
+	public double minX;
+	public double minY;
+	public double minZ;
+	public double maxX;
+	public double maxY;
+	public double maxZ;
 
 	public AxisAlignedBB(double x1, double y1, double z1, double x2, double y2, double z2) {
 		this.minX = Math.min(x1, x2);
@@ -43,6 +43,15 @@ public class AxisAlignedBB {
 		this.maxY = (double) pos2.getY();
 		this.maxZ = (double) pos2.getZ();
 	}
+	public AxisAlignedBB offsetAndUpdate(final double par1, final double par3, final double par5) {
+        this.minX += par1;
+        this.minY += par3;
+        this.minZ += par5;
+        this.maxX += par1;
+        this.maxY += par3;
+        this.maxZ += par5;
+        return this;
+    }
 
 	/**+
 	 * Adds the coordinates to the bounding box extending it if the

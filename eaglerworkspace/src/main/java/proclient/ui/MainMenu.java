@@ -46,7 +46,7 @@ public class MainMenu extends GuiScreen {
             mc.displayGuiScreen(new GuiOptions(this, mc.gameSettings));
         }
         if(button.id == 2) {
-            EagRuntime.openLink(EaglercraftVersion.Discordserver);
+            EagRuntime.openLink(EaglercraftVersion.projectForkURL);
         }
         if(button.id == 3) {
 			this.mc.displayGuiScreen(new GuiScreenEditProfile(this));
