@@ -267,7 +267,7 @@ public class ItemRenderer {
 		GlStateManager.rotate(f * -20.0F, 0.0F, 1.0F, 0.0F);
 		GlStateManager.rotate(f1 * -20.0F, 0.0F, 0.0F, 1.0F);
 		GlStateManager.rotate(f1 * -80.0F, 1.0F, 0.0F, 0.0F);
-		GlStateManager.scale(0.4F, 0.4F, 0.4F);
+		GlStateManager.scale(0.25F, 0.25F, 0.25F);
 	}
 
 	private void func_178098_a(float clientPlayer, AbstractClientPlayer parAbstractClientPlayer) {
@@ -334,8 +334,9 @@ public class ItemRenderer {
 					this.transformFirstPersonItem(f, 0.0F);
 					break;
 				case BLOCK:
-					this.transformFirstPersonItem(f, 0.0F);
+					this.transformFirstPersonItem(0.2F, f1);
 					this.func_178103_d();
+					GlStateManager.translate(-0.5F, 0.2F, 0.0F);
 					break;
 				case BOW:
 					this.transformFirstPersonItem(f, 0.0F);

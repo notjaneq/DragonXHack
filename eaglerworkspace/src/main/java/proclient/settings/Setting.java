@@ -15,7 +15,7 @@ import proclient.module.Module;
  */
 public class Setting {
 	
-	private String name;
+	public String name;
 	private Module parent;
 	private String mode;
 	

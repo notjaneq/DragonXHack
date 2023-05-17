@@ -13,7 +13,7 @@ public class VapeOverlay extends RenderModule {
 
     public void draw() {
         this.mc.getTextureManager().bindTexture(new ResourceLocation("dragon/vape-overlay.png"));
-        Gui.drawModalRectWithCustomSizedTexture(this.x, this.y, 1.0F, 0.0F, 70, 55, 70.0F, 55.0F);
+        Gui.drawModalRectWithCustomSizedTexture(this.x, this.y, 0, 0, 70, 55, 70, 55);
         super.draw();
     }
 }
