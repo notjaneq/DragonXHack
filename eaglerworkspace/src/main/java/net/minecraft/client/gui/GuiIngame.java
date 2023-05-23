@@ -311,7 +311,7 @@ public class GuiIngame extends Gui {
 			this.overlayPlayerList.renderPlayerlist(i, scoreboard, scoreobjective1);
 		}
 
-		Dragon.arraylist.draw();
+		//Dragon.arraylist.draw();
 		for(Module m : Dragon.moduleManager.mods) {
 			if(m.isToggled() && m instanceof RenderModule) {
 				((RenderModule)m).draw();

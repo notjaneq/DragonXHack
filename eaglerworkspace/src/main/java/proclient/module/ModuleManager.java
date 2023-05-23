@@ -74,6 +74,7 @@ public class ModuleManager {
         newMod(new NoWeather());
         newMod(new VapeOverlay());
         newMod(new Drag());
+        newMod(new proclient.ui.ArrayList());
 
         //MISC
         newMod(new SpeedMine());
@@ -82,6 +83,7 @@ public class ModuleManager {
         newMod(new FastEat());
         newMod(new Dupe());
         newMod(new PingSpoofer());
+        newMod(new Timer());
     }
 
     public static void newMod(Module m) {

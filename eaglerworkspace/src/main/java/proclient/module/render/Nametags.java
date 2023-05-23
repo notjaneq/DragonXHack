@@ -53,7 +53,7 @@ public class Nametags extends Module {
         GlStateManager.disableLighting();
         GlStateManager.scale(0.5, 0.5, 0.5);
         GlStateManager.disableDepth();
-        if (!Dragon.setmgr.getSettingByName("Enchants").getValBoolean()) {
+        if (!Dragon.setmgr.getSettingByName("Enchants").isEnabled()) {
         Nametags.renderEnchantmentText(stack, x, y);
      }
         GlStateManager.enableDepth();

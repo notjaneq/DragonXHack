@@ -3,14 +3,20 @@ package proclient.ui;
 import java.util.Comparator;
 import java.util.List;
 
+import net.lax1dude.eaglercraft.v1_8.internal.KeyboardConstants;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.Gui;
 import net.minecraft.client.gui.GuiScreen;
 import proclient.Dragon;
+import proclient.module.Category;
 import proclient.module.Module;
+import proclient.module.RenderModule;
 import proclient.util.RenderUtil;
 
-public class ArrayList {
+public class ArrayList extends RenderModule {
+	public ArrayList() {
+		super("ArrayList", KeyboardConstants.KEY_NONE, Category.HUD, 0, 0, 0, 0);
+	}
 
     public void draw(){
         Dragon.moduleManager.mods.sort(Comparator.comparingInt(m -> Minecraft.getMinecraft().fontRendererObj.getStringWidth(((Module)m).name)).reversed());

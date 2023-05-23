@@ -75,11 +75,11 @@ public class Setting {
 		return this.options;
 	}
 	
-	public boolean getValBoolean(){
+	public boolean isEnabled(){
 		return this.bval;
 	}
 	
-	public void setValBoolean(boolean in){
+	public void setEnabled(boolean in){
 		this.bval = in;
 	}
 	

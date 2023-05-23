@@ -10,7 +10,7 @@ import proclient.module.RenderModule;
 
 public class ArmorStats extends RenderModule {
     public ArmorStats() {
-        super("ArmorStats", KeyboardConstants.KEY_NONE, Category.HUD, 525, 10, 64, 100);
+        super("ArmorStats", KeyboardConstants.KEY_NONE, Category.HUD, 525, 10, 10, 10);
     }
 
     private void getArmorValues() {
@@ -40,7 +40,7 @@ public class ArmorStats extends RenderModule {
                 }
             }
         RenderHelper.enableGUIStandardItemLighting();
-        Minecraft.getMinecraft().getRenderItem().renderItemAndEffectIntoGUI(is, this.x, this.y * i * 2);
+        Minecraft.getMinecraft().getRenderItem().renderItemAndEffectIntoGUI(is, this.x, this.y * 2 * i);
         GlStateManager.popMatrix();
         }
     }

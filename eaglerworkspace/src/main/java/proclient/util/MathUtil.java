@@ -14,4 +14,8 @@ public class MathUtil {
         return (int) (min + (max - min) * random.nextDouble());
     }
 
+    public static double randomNumber(double max, double min) {
+        return (Math.random() * (max - min)) + min;
+    }
+
 }

@@ -12,7 +12,7 @@ import proclient.ui.DragScreen;
 public class Drag extends Module {
     public DragScreen dragScreen;
     public Drag() {
-        super("DragScreen", KeyboardConstants.KEY_NONE, Category.HUD);
+        super("DragScreen", KeyboardConstants.KEY_O, Category.HUD);
     }
 
     public void onEnable() {
