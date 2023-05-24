@@ -75,6 +75,7 @@ public class ModuleManager {
         newMod(new VapeOverlay());
         newMod(new Drag());
         newMod(new proclient.ui.ArrayList());
+        newMod(new Radar());
 
         //MISC
         newMod(new SpeedMine());
