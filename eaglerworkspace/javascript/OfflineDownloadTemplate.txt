@@ -29,24 +29,19 @@ Compile it yourself here: https://gitlab.com/lax1dude/eaglercraftx-1.8/
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta name="description" content="EaglercraftX 1.8 Offline" />
-<meta name="keywords" content="eaglercraft, eaglercraftx, minecraft, 1.8, 1.8.8" />
-<title>DragonX V3</title>
+<meta name="keywords" content="eaglercraft, eaglercraftx, minecraft, 1.8, 1.8.8, hack, hack client, client, dragonx, v2, eagler, eaglercrack" />
+<title>Dragon-X V2</title>
 <meta property="og:locale" content="en-US" />
 <meta property="og:type" content="website" />
 <meta property="og:title" content="EaglercraftX 1.8 Offline" />
-<meta property="og:description" content="this file is not a website, whoever uploaded it to this URL is a dumbass" />
+<meta property="og:description" content="This is a eaglercraft hack client" />
 <script type="text/javascript">
 "use strict";
 
 
 // %%%%%%%%% launch options %%%%%%%%%%%%
 
-window.eaglercraftXOpts = { 
-	container: "game_frame"
-	servers: [
-		{ addr: "wss://mc.arch.lol", name: "ArchMC" }
-	]
- };
+window.eaglercraftXOpts = { container: "game_frame" };
 
 // %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
