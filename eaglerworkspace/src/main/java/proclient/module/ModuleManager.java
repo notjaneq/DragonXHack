@@ -77,6 +77,9 @@ public class ModuleManager {
         newMod(new Drag());
         newMod(new proclient.ui.ArrayList());
         newMod(new Radar());
+        newMod(new CPS());
+        newMod(new PotionHUD());
+        newMod(new Info());
 
         //MISC
         newMod(new SpeedMine());
