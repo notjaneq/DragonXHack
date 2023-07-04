@@ -98,7 +98,7 @@ public class PlatformInput {
 	public static boolean keyboardLockSupported = false;
 	public static boolean lockKeys = false;
 	
-	@JSBody(params = { }, script = "window.onbeforeunload = () => {return false;};")
+	@JSBody(params = { }, script = "")
 	private static native void onBeforeCloseRegister();
 	
 	static void initHooks(Window window, HTMLCanvasElement canvaz) {
@@ -545,7 +545,7 @@ public class PlatformInput {
 		if(mouseEvents.isEmpty() && keyEvents.isEmpty() && !hasBeenActive()) {
 			EarlyLoadScreen.paintEnable();
 			
-			while(mouseEvents.isEmpty() && keyEvents.isEmpty()) {
+			while(!PlatformRuntime.returnHasUserInteractionHappened()) {
 				EagUtils.sleep(100l);
 			}
 		}

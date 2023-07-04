@@ -23,7 +23,7 @@ import net.minecraft.init.Blocks;
  * 
  */
 public class ChunkPrimer {
-	private final short[] data = new short[65536];
+	private final short[] data = new short[4096];
 	private final IBlockState defaultState = Blocks.air.getDefaultState();
 
 	public IBlockState getBlockState(int x, int y, int z) {

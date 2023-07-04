@@ -166,6 +166,8 @@ import net.minecraft.world.WorldSettings;
 import proclient.*;
 import proclient.event.events.EventClientTick;
 import proclient.ui.DragScreen;
+import net.lax1dude.eaglercraft.v1_8.EagUtils;
+
 
 /**+
  * This portion of EaglercraftX contains deobfuscated Minecraft 1.8 source code.
@@ -476,6 +478,9 @@ public class Minecraft implements IThreadListener {
 		this.renderEngine.deleteTexture(this.mojangLogo);
 		this.mojangLogo = null;
 		this.loadingScreen = new LoadingScreenRenderer(this);
+
+		PlatformRuntime.die();
+		EagUtils.sleep(400l);
 	}
 
 	private void registerMetadataSerializers() {
@@ -628,6 +633,8 @@ public class Minecraft implements IThreadListener {
 		GlStateManager.enableAlpha();
 		GlStateManager.alphaFunc(GL_GREATER, 0.1F);
 		this.updateDisplay();
+		PlatformRuntime.showMojangScreen();
+		EagUtils.sleep(400l);
 	}
 
 	public void func_181536_a(int parInt1, int parInt2, int parInt3, int parInt4, int parInt5, int parInt6, int parInt7,

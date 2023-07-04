@@ -446,4 +446,28 @@ public class PlatformRuntime {
 		//
 	}
 
+
+	public static void updateLoading(Event evt){
+		//
+	}
+
+
+	public static void showEnableScreen(){
+		//
+	}
+
+
+	public static void showEaglerLoadingScreen(){
+		//
+	}
+
+	public static void showMojangScreen(){
+		//
+	}
+
+	public static void showDecompressing(){
+		//
+	}
+
+
 }
