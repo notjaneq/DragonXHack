@@ -3,6 +3,11 @@ package proclient.module;
 import proclient.Dragon;
 import proclient.event.Event;
 import proclient.settings.Setting;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.entity.EntityPlayerSP;
 import net.minecraft.client.multiplayer.PlayerControllerMP;

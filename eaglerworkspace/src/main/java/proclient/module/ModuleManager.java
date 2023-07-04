@@ -18,7 +18,6 @@ import net.minecraft.util.ChatComponentText;
 public class ModuleManager {
 
     public static ArrayList<Module> mods;
-    public static AllowFly allowfly;
 
     public ModuleManager() {
         mods = new ArrayList<Module>();
@@ -80,6 +79,8 @@ public class ModuleManager {
         newMod(new CPS());
         newMod(new PotionHUD());
         newMod(new Info());
+        newMod(new ComboCounter());
+
 
         //MISC
         newMod(new SpeedMine());

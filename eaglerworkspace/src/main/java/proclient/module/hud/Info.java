@@ -12,7 +12,7 @@ import proclient.module.RenderModule;
 
 public class Info extends RenderModule{
     public Info() {
-        super("Info", KeyboardConstants.KEY_NONE, Category.HUD, 50, 50, 5 + Minecraft.getMinecraft().fontRendererObj.getStringWidth(" X:   Biome:" + Minecraft.getMinecraft().theWorld.getBiomeGenForCoords(new BlockPos(getPositions()[0], getPositions()[1], getPositions()[2])).biomeName + Math.max(getPositions()[0], Math.max(getPositions()[1], getPositions()[2]))), 63);
+        super("Info", KeyboardConstants.KEY_NONE, Category.HUD, 50, 50, 125, 63);
     }
 
     public static final String[] directionsF = new String[] { "\u00A79S\u00A7r", "\u00A72W\u00A7r", "\u00A74N\u00A7r", "\u00A76E\u00A7r" };
@@ -31,7 +31,7 @@ public class Info extends RenderModule{
             Minecraft.getMinecraft().fontRendererObj.drawString(" Y: " + getPositions()[1], this.x + 5, this.y + 24, -1);
             Minecraft.getMinecraft().fontRendererObj.drawString(" Z: " + getPositions()[2], this.x + 5, this.y + 34, -1);
             Minecraft.getMinecraft().fontRendererObj.drawString(" Dir: ", this.x + 5 + mc.fontRendererObj.getStringWidth(" X:  " + getPositions()[0]), this.y + 14, -1);
-                mc.fontRendererObj.drawString(directionsF[rot], this.x + 5 + mc.fontRendererObj.getStringWidth(" X:   Dir: " + getPositions()[0]), this.y + 14, -1);
+            Minecraft.getMinecraft().fontRendererObj.drawString(directionsF[rot], this.x + 5 + mc.fontRendererObj.getStringWidth(" X:   Dir: " + getPositions()[0]), this.y + 14, -1);
             Minecraft.getMinecraft().fontRendererObj.drawString(" Biome: " + mc.theWorld.getBiomeGenForCoords(new BlockPos(getPositions()[0], getPositions()[1], getPositions()[2])).biomeName, this.x + 5, this.y + 44, -1);
         }
     }

@@ -25,8 +25,8 @@ public class RenderModule extends Module {
 	}
 	
 	public int x,y,width,height;
-	private int lastX;
-	private int lastY;
+	public int lastX;
+	public int lastY;
 
 	public void draw() {
 		
