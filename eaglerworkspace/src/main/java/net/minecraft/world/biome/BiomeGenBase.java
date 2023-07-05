@@ -296,7 +296,7 @@ public abstract class BiomeGenBase {
 	 * Gets an integer representation of this biome's rainfall
 	 */
 	public final int getIntRainfall() {
-		return (int) (this.rainfall * 65536.0F);
+		return (int) (this.rainfall * 4096.0F);
 	}
 
 	/**+

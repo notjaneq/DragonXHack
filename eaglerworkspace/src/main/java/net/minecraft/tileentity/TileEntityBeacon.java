@@ -206,7 +206,7 @@ public class TileEntityBeacon extends TileEntityLockable implements ITickable, I
 	}
 
 	public double getMaxRenderDistanceSquared() {
-		return 65536.0D;
+		return 4096.0D;
 	}
 
 	private int func_183001_h(int parInt1) {

@@ -2657,8 +2657,8 @@ public class EntityRenderer implements IResourceManagerReloadListener {
 				for (int i = 0; i < NameTagRenderer.nameTagsCount; ++i) {
 					NameTagRenderer n = NameTagRenderer.nameTagsThisFrame[i];
 					int ii = n.entityIn.getBrightnessForRender(partialTicks);
-					int j = ii % 65536;
-					int k = ii / 65536;
+					int j = ii % 4096;
+					int k = ii / 4096;
 					OpenGlHelper.setLightmapTextureCoords(OpenGlHelper.lightmapTexUnit, (float) j / 1.0F,
 							(float) k / 1.0F);
 					GlStateManager.color(1.0F, 1.0F, 1.0F, 1.0F);

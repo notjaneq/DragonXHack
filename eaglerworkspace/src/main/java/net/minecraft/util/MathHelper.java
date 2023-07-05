@@ -27,7 +27,7 @@ public class MathHelper {
 	 * A table of sin values computed from 0 (inclusive) to 2*pi
 	 * (exclusive), with steps of 2*PI / 65536.
 	 */
-	private static final float[] SIN_TABLE = new float[65536];
+	private static final float[] SIN_TABLE = new float[4096];
 	private static final int[] multiplyDeBruijnBitPosition;
 	private static final double field_181163_d;
 	private static final double[] field_181164_e;
@@ -37,14 +37,14 @@ public class MathHelper {
 	 * sin looked up in a table
 	 */
 	public static float sin(float parFloat1) {
-		return SIN_TABLE[(int) (parFloat1 * 10430.378F) & '\uffff'];
+		return SIN_TABLE[(int)(parFloat1 * 651.8986F) & 4095];
 	}
 
 	/**+
 	 * cos looked up in the sin table with the appropriate offset
 	 */
 	public static float cos(float value) {
-		return SIN_TABLE[(int) (value * 10430.378F + 16384.0F) & '\uffff'];
+		return SIN_TABLE[(int)((value + ((float)Math.PI / 2F)) * 651.8986F) & 4095];
 	}
 
 	public static float sqrt_float(float value) {
@@ -504,5 +504,15 @@ public class MathHelper {
 			field_181164_e[j] = d1;
 		}
 
+	}
+
+	static {
+		for (int j = 0; j < 4096; ++j) {
+            SIN_TABLE[j] = (float)Math.sin((double)(((float)j + 0.5F) / 4096.0F * ((float)Math.PI * 2F)));
+        }
+
+        for (int l = 0; l < 360; l += 90) {
+            SIN_TABLE[(int)((float)l * 11.377778F) & 4095] = (float)Math.sin((double)((float)l * 0.017453292F));
+        }
 	}
 }

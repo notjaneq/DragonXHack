@@ -48,8 +48,8 @@ public abstract class RenderLiving<T extends EntityLiving> extends RendererLivin
 
 	public void func_177105_a(T entityLivingIn, float partialTicks) {
 		int i = entityLivingIn.getBrightnessForRender(partialTicks);
-		int j = i % 65536;
-		int k = i / 65536;
+		int j = i % 4096;
+		int k = i / 4096;
 		OpenGlHelper.setLightmapTextureCoords(OpenGlHelper.lightmapTexUnit, (float) j / 1.0F, (float) k / 1.0F);
 	}
 

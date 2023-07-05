@@ -177,8 +177,8 @@ public class RenderPainting extends Render<EntityPainting> {
 		}
 
 		int l = this.renderManager.worldObj.getCombinedLight(new BlockPos(i, j, k), 0);
-		int i1 = l % 65536;
-		int j1 = l / 65536;
+		int i1 = l % 4096;
+		int j1 = l / 4096;
 		OpenGlHelper.setLightmapTextureCoords(OpenGlHelper.lightmapTexUnit, (float) i1, (float) j1);
 		GlStateManager.color(1.0F, 1.0F, 1.0F);
 	}
