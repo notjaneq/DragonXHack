@@ -13,7 +13,7 @@ public class TabSettings extends GuiScreen {
 
     @Override
     public void initGui() {
-        this.buttonList.add(new GuiButton(0, this.width / 2 - 100, this.height / 2 - 60, "TabName"));
+        this.buttonList.add(new GuiButton(0, this.width / 2 - 100, this.height / 2 - 30, "TabName"));
         this.buttonList.add(new GuiButton(1, this.width / 2 - 100, this.height / 2 + 0, "Favicon"));
         this.buttonList.add(new GuiButton(3, this.width / 2 - 100, this.height / 2 + 30, "Done"));
         super.initGui();

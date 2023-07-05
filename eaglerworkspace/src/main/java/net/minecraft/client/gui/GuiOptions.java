@@ -111,7 +111,7 @@ public class GuiOptions extends GuiScreen implements GuiYesNoCallback {
 				I18n.format("options.resourcepack", new Object[0])));
 		GuiButton b;
 		this.buttonList.add(b = new GuiButton(104, this.width / 2 + 5, this.height / 6 + 144 - 6, 150, 20,
-				I18n.format("TabSettings", new Object[0])));
+				I18n.format("Stuff", new Object[0])));
 		b.enabled = true;
 		this.buttonList.add(new GuiButton(200, this.width / 2 - 100, this.height / 6 + 168,
 				I18n.format("gui.done", new Object[0])));

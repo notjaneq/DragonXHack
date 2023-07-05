@@ -85,10 +85,10 @@ public class GuiOverlayDebug extends Gui {
 		} else {
 			int i = 2;
 
-			if (this.mc.gameSettings.hudFps) {
-				drawFPS(2, i);
-				i += 9;
-			}
+			//if (this.mc.gameSettings.hudFps) {
+			//	drawFPS(2, i);
+			//	i += 9;
+			//}
 
 			if (this.mc.gameSettings.hudCoords) {
 				drawXYZ(2, i);

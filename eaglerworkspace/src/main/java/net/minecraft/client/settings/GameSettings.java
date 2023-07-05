@@ -860,7 +860,7 @@ public class GameSettings {
 						this.field_181151_V = astring[1].equals("true");
 					}
 
-					if (astring[0].equals("hudFps")) {
+					if (astring[0].equals("LeftHand")) {
 						this.hudFps = astring[1].equals("true");
 					}
 
