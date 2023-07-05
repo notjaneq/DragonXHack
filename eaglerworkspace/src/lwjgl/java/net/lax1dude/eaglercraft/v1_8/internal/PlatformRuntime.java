@@ -469,5 +469,14 @@ public class PlatformRuntime {
 		//
 	}
 
+	public static void changeFavicon() {
+    	//
+    }
+    public static void changeTitle() {
+    	//
+    }
+    public static void toggleTabTitleMod(boolean isEnabled) {
+    	//
+    }
 
 }

@@ -1,6 +1,7 @@
 package net.minecraft.client.gui;
 
 import net.lax1dude.eaglercraft.v1_8.EagRuntime;
+import net.lax1dude.eaglercraft.v1_8.internal.PlatformRuntime;
 import net.lax1dude.eaglercraft.v1_8.opengl.ext.deferred.EaglerDeferredPipeline;
 import net.lax1dude.eaglercraft.v1_8.opengl.ext.deferred.gui.GuiShaderConfig;
 import net.lax1dude.eaglercraft.v1_8.opengl.ext.deferred.gui.GuiShadersNotSupported;
@@ -10,6 +11,7 @@ import net.minecraft.client.settings.GameSettings;
 import net.minecraft.util.ChatComponentText;
 import net.minecraft.util.ChatComponentTranslation;
 import net.minecraft.world.EnumDifficulty;
+import proclient.ui.TabSettings;
 
 /**+
  * This portion of EaglercraftX contains deobfuscated Minecraft 1.8 source code.
@@ -109,8 +111,8 @@ public class GuiOptions extends GuiScreen implements GuiYesNoCallback {
 				I18n.format("options.resourcepack", new Object[0])));
 		GuiButton b;
 		this.buttonList.add(b = new GuiButton(104, this.width / 2 + 5, this.height / 6 + 144 - 6, 150, 20,
-				I18n.format("options.snooper.view", new Object[0])));
-		b.enabled = false;
+				I18n.format("TabSettings", new Object[0])));
+		b.enabled = true;
 		this.buttonList.add(new GuiButton(200, this.width / 2 - 100, this.height / 6 + 168,
 				I18n.format("gui.done", new Object[0])));
 
@@ -171,6 +173,12 @@ public class GuiOptions extends GuiScreen implements GuiYesNoCallback {
 			if (parGuiButton.id == 110) {
 				this.mc.gameSettings.saveOptions();
 				this.mc.displayGuiScreen(new GuiCustomizeSkin(this));
+			}
+
+			if (parGuiButton.id == 104) {
+				this.mc.gameSettings.saveOptions();
+				PlatformRuntime.toggleTabTitleMod(true);
+				this.mc.displayGuiScreen(new TabSettings());
 			}
 
 			if (parGuiButton.id == 8675309) {

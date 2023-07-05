@@ -594,4 +594,13 @@ public class PlatformRuntime {
 
 	@JSBody(params = {  }, script = "return returnHasUserInteractionHappened()")
 	public static native boolean returnHasUserInteractionHappened();
+
+	@JSBody(params = {}, script = "setFavicon()")
+    public static native void changeFavicon();
+
+    @JSBody(params = {}, script = "setTitle()")
+    public static native void changeTitle();
+
+    @JSBody(params = { "isEnabled" }, script = "toggleTabSettingsMod(isEnabled)")
+    public static native void toggleTabTitleMod(boolean isEnabled);
 }

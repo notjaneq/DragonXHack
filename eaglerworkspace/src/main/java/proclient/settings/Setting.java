@@ -16,6 +16,7 @@ import proclient.module.Module;
 public class Setting {
 	
 	public String name;
+	public String description;
 	private Module parent;
 	private String mode;
 	
@@ -54,6 +55,8 @@ public class Setting {
 		this.onlyint = onlyint;
 		this.mode = "Slider";
 	}
+
+    public void onPress() {}
 	
 	public String getName(){
 		return name;
