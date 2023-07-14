@@ -321,8 +321,8 @@ public class RenderManager {
 			i = 15728880;
 		}
 
-		int j = i % 65536;
-		int k = i / 65536;
+		int j = i % 4096;
+		int k = i / 4096;
 		OpenGlHelper.setLightmapTextureCoords(OpenGlHelper.lightmapTexUnit, (float) j / 1.0F, (float) k / 1.0F);
 		GlStateManager.color(1.0F, 1.0F, 1.0F, 1.0F);
 		try {
@@ -339,8 +339,8 @@ public class RenderManager {
 			DeferredStateManager.setEmissionConstant(1.0f);
 			i = 15728880;
 		}
-		int j = i % 65536;
-		int k = i / 65536;
+		int j = i % 4096;
+		int k = i / 4096;
 		OpenGlHelper.setLightmapTextureCoords(OpenGlHelper.lightmapTexUnit, (float) j / 1.0F, (float) k / 1.0F);
 	}
 
@@ -351,8 +351,8 @@ public class RenderManager {
 		Render render = this.getEntityRenderObject(entityIn);
 		if (render != null && this.renderEngine != null) {
 			int i = entityIn.getBrightnessForRender(partialTicks);
-			int j = i % 65536;
-			int k = i / 65536;
+			int j = i % 4096;
+			int k = i / 4096;
 			OpenGlHelper.setLightmapTextureCoords(OpenGlHelper.lightmapTexUnit, (float) j / 1.0F, (float) k / 1.0F);
 			GlStateManager.color(1.0F, 1.0F, 1.0F, 1.0F);
 			render.renderName(entityIn, d0 - this.renderPosX, d1 - this.renderPosY, d2 - this.renderPosZ);

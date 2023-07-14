@@ -54,8 +54,8 @@ public class LayerHeldBlock implements LayerRenderer<EntityEnderman> {
 			float f1 = 0.5F;
 			GlStateManager.scale(-f1, -f1, f1);
 			int i = entityenderman.getBrightnessForRender(f);
-			int j = i % 65536;
-			int k = i / 65536;
+			int j = i % 4096;
+			int k = i / 4096;
 			OpenGlHelper.setLightmapTextureCoords(OpenGlHelper.lightmapTexUnit, (float) j / 1.0F, (float) k / 1.0F);
 
 			if (DeferredStateManager.isInDeferredPass()

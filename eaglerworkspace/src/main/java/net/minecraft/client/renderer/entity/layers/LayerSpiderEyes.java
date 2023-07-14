@@ -99,14 +99,14 @@ public class LayerSpiderEyes implements LayerRenderer<EntitySpider> {
 		}
 
 		int i = 61680;
-		int j = i % 65536;
-		int k = i / 65536;
+		int j = i % 4096;
+		int k = i / 4096;
 		OpenGlHelper.setLightmapTextureCoords(OpenGlHelper.lightmapTexUnit, (float) j / 1.0F, (float) k / 1.0F);
 		GlStateManager.color(1.0F, 1.0F, 1.0F, 1.0F);
 		this.spiderRenderer.getMainModel().render(entityspider, f, f1, f3, f4, f5, f6);
 		i = entityspider.getBrightnessForRender(f2);
-		j = i % 65536;
-		k = i / 65536;
+		j = i % 4096;
+		k = i / 4096;
 		OpenGlHelper.setLightmapTextureCoords(OpenGlHelper.lightmapTexUnit, (float) j / 1.0F, (float) k / 1.0F);
 		this.spiderRenderer.func_177105_a(entityspider, f2);
 		GlStateManager.disableBlend();

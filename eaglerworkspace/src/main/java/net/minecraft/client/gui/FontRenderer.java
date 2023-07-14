@@ -54,7 +54,7 @@ public class FontRenderer implements IResourceManagerReloadListener {
 	 * Array of the start/end column (in upper/lower nibble) for
 	 * every glyph in the /font directory.
 	 */
-	protected byte[] glyphWidth = new byte[65536];
+	protected byte[] glyphWidth = new byte[4096];
 	/**+
 	 * Array of RGB triplets defining the 16 standard chat colors
 	 * followed by 16 darker version of the same colors for drop

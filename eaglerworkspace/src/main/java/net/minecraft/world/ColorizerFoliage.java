@@ -22,7 +22,7 @@ public class ColorizerFoliage {
 	/**+
 	 * Color buffer for foliage
 	 */
-	private static int[] foliageBuffer = new int[65536];
+	private static int[] foliageBuffer = new int[4096];
 
 	public static void setFoliageBiomeColorizer(int[] parArrayOfInt) {
 		foliageBuffer = parArrayOfInt;

@@ -50,8 +50,8 @@ public class LayerIronGolemFlower implements LayerRenderer<EntityIronGolem> {
 			float f1 = 0.5F;
 			GlStateManager.scale(f1, -f1, f1);
 			int i = entityirongolem.getBrightnessForRender(f);
-			int j = i % 65536;
-			int k = i / 65536;
+			int j = i % 4096;
+			int k = i / 4096;
 			OpenGlHelper.setLightmapTextureCoords(OpenGlHelper.lightmapTexUnit, (float) j / 1.0F, (float) k / 1.0F);
 			GlStateManager.color(1.0F, 1.0F, 1.0F, 1.0F);
 			this.ironGolemRenderer.bindTexture(TextureMap.locationBlocksTexture);

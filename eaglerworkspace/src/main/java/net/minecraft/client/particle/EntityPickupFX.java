@@ -64,8 +64,8 @@ public class EntityPickupFX extends EntityFX {
 		double d7 = d1 + (d4 - d1) * (double) f1;
 		double d8 = d2 + (d5 - d2) * (double) f1;
 		int i = this.getBrightnessForRender(f);
-		int j = i % 65536;
-		int k = i / 65536;
+		int j = i % 4096;
+		int k = i / 4096;
 		OpenGlHelper.setLightmapTextureCoords(OpenGlHelper.lightmapTexUnit, (float) j / 1.0F, (float) k / 1.0F);
 		GlStateManager.color(1.0F, 1.0F, 1.0F, 1.0F);
 		d6 = d6 - interpPosX;

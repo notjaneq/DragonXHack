@@ -22,7 +22,7 @@ public class ColorizerGrass {
 	/**+
 	 * Color buffer for grass
 	 */
-	private static int[] grassBuffer = new int[65536];
+	private static int[] grassBuffer = new int[4096];
 
 	public static void setGrassBiomeColorizer(int[] parArrayOfInt) {
 		grassBuffer = parArrayOfInt;

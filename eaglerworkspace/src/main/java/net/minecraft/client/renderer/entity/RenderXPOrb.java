@@ -59,8 +59,8 @@ public class RenderXPOrb extends Render<EntityXPOrb> {
 		float f7 = 0.5F;
 		float f8 = 0.25F;
 		int j = entityxporb.getBrightnessForRender(f1);
-		int k = j % 65536;
-		int l = j / 65536;
+		int k = j % 4096;
+		int l = j / 4096;
 		OpenGlHelper.setLightmapTextureCoords(OpenGlHelper.lightmapTexUnit, (float) k / 1.0F, (float) l / 1.0F);
 		GlStateManager.color(1.0F, 1.0F, 1.0F, 1.0F);
 		float f10 = 255.0F;

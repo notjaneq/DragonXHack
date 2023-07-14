@@ -579,7 +579,7 @@ public final class IntMath {
 	// binomial(biggestBinomials[k], k) fits in an int, but not
 	// binomial(biggestBinomials[k]+1,k).
 	@VisibleForTesting
-	static int[] biggestBinomials = { Integer.MAX_VALUE, Integer.MAX_VALUE, 65536, 2345, 477, 193, 110, 75, 58, 49, 43,
+	static int[] biggestBinomials = { Integer.MAX_VALUE, Integer.MAX_VALUE, 4096, 2345, 477, 193, 110, 75, 58, 49, 43,
 			39, 37, 35, 34, 34, 33 };
 
 	/**
