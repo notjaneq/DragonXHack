@@ -24,7 +24,8 @@ To Install This Client Or Compile it Run The Following Commands:
 
 1: I Open-Sourced The Code.
 
-2: Peyton Got Mad At Me And Leaked It.   
+2: Eagler got boring
+3: yes 
 
 #### Did You Skid Anything In This Client?
 
