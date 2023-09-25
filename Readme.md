@@ -15,7 +15,7 @@ To Install This Client Or Compile it Run The Following Commands:
     
 ## Authors
 
-- [@FatalEagler](https://www.github.com/fataleagler)
+- [12etroo]((https://www.github.com/12etroo))
 
 
 ## FAQ
